@@ -1,0 +1,118 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f9f9f9;
+    color: #222;
+    transition: background 0.3s, color 0.3s;
+}
+
+header {
+    background: #0077ff;
+    color: #fff;
+    padding: 1em 0;
+    position: sticky;
+    top: 0;
+}
+
+h1 {
+    margin: 0;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 1.5em;
+    margin-top: 0.5em;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    transition: border-bottom 0.2s;
+    padding-bottom: 2px;
+}
+
+nav a:hover {
+    border-bottom: 2px solid #fff;
+}
+
+main {
+    max-width: 800px;
+    margin: 2em auto;
+    padding: 0 1em;
+}
+
+section {
+    margin-bottom: 2em;
+}
+
+.card {
+    background: #e3e7ee;
+    margin-bottom: 1em;
+    padding: 1em;
+    border-radius: 8px;
+    transition: box-shadow 0.2s;
+}
+
+.card:hover {
+    box-shadow: 0 2px 10px rgba(0,0,0,0.12);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+input, textarea {
+    padding: 0.5em;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+}
+
+button[type="submit"], #darkModeToggle {
+    padding: 0.5em 1em;
+    border: none;
+    background: #0077ff;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+button[type="submit"]:hover, #darkModeToggle:hover {
+    background: #0057bb;
+}
+
+footer {
+    text-align: center;
+    padding: 1em 0;
+    background: #f4f4f4;
+    color: #555;
+}
+
+/* Smooth scroll */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Dark mode */
+body.dark-mode {
+    background: #232933;
+    color: #f4f4f4;
+}
+body.dark-mode header {
+    background: #222637;
+}
+body.dark-mode .card {
+    background: #394055;
+}
+body.dark-mode footer {
+    background: #1c1f27;
+}
+
+body.dark-mode nav a, body.dark-mode nav {
+    color: #e3e7ee !important;
+}
